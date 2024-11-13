@@ -19,7 +19,7 @@ function generatePoster() {
     }
 
     if (!document.getElementById('designation').value) {
-        alert("Please enter your company name.");
+        alert("Please enter your designation.");
         return;
     }
 
