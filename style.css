@@ -1,0 +1,76 @@
+body {
+  font-family: 'Amazon Ember', sans-serif;
+  font-weight: 700;
+  background-color: #f5f5f5;
+}
+
+.container {
+  max-width: 600px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+h2 {
+  color: #ff9900; /* AWS orange color */
+}
+
+#posterCanvas {
+  border: 3px solid #232f3e; /* AWS dark color */
+  display: none; /* Hide canvas initially */
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-top: 1rem;
+}
+
+#imageUpload {
+  display: block;
+  margin: 1rem auto;
+}
+
+.btn-custom {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #e68a00;
+}
+
+#downloadBtn, #shareBtn {
+  display: none; /* Hide buttons initially */
+  margin-top: 1rem;
+}
+
+#shareTextContainer {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+#shareText {
+  resize: none;
+  width: 100%;
+  min-height: 200px;
+  font-family: 'Amazon Ember', sans-serif;
+  font-size: 0.9rem;
+  padding: 10px;
+  margin-top: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.btn-copy {
+  margin-top: 0.5rem;
+  display: inline-block;
+  width: 100%;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
