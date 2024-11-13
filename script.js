@@ -92,9 +92,12 @@ function generatePoster() {
             image.src = e.target.result;
         };
         reader.readAsDataURL(file);
+
+        document.getElementById('instruction-box').style.display = "block";
+
     };
 
-    document.getElementById('shareTextContainer').style.display = 'block';
+    
 }
 
 async function sharePoster() {

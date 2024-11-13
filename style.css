@@ -74,3 +74,11 @@ footer {
   font-size: 0.9rem;
   color: #777;
 }
+
+.instruction-box {
+  font-weight: 500;
+  background-color: #f8f9fa; /* Light gray background */
+  border: 1px solid #dee2e6; /* Subtle border color */
+  border-radius: 8px;        /* Rounded corners */
+  display: none;
+}
