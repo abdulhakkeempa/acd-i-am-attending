@@ -17,6 +17,12 @@ function generatePoster() {
         alert("Please enter your name.");
         return;
     }
+
+    if (!document.getElementById('designation').value) {
+        alert("Please enter your company name.");
+        return;
+    }
+
     if (!document.getElementById('company').value) {
         alert("Please enter your company name.");
         return;
@@ -33,14 +39,14 @@ function generatePoster() {
     const image = new Image();
     const background = new Image();
 
-    background.src = 'assets/bg/template-v3.png'; 
+    background.src = 'assets/bg/template-v4.png'; 
 
     background.onload = function() {
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
         image.onload = function() {
-            const size = 500;
-            const x = 640;
-            const y = 351;
+            const size = 400;
+            const x = 714;
+            const y = 326;
 
             let srcX = 0, srcY = 0, srcWidth = image.width, srcHeight = image.height;
 
@@ -53,15 +59,15 @@ function generatePoster() {
             }
 
 
-            const centerX = 640 + (501 / 2); 
+            const centerX = x + (size / 2); 
 
             ctx.font = "bold 26px Amazon Ember";
             ctx.fillStyle = "#FFFFFF"; 
             ctx.textAlign = "center"; 
-            ctx.fillText(document.getElementById('name').value, centerX, 900);
+            ctx.fillText(document.getElementById('name').value, centerX, 775);
             ctx.font = "500 26px Amazon Ember";
-            ctx.fillText(document.getElementById('company').value, centerX, 935);
-
+            ctx.fillText(document.getElementById('designation').value, centerX, 810);
+            ctx.fillText(document.getElementById('company').value, centerX, 845);
             ctx.save();
             ctx.beginPath();
             ctx.arc(x + size / 2, y + size / 2, size / 2, 0, Math.PI * 2, true);
