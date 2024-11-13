@@ -33,7 +33,7 @@ function generatePoster() {
     const image = new Image();
     const background = new Image();
 
-    background.src = 'assets/bg/template-v2.png'; 
+    background.src = 'assets/bg/template-v3.png'; 
 
     background.onload = function() {
         ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
