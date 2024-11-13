@@ -93,6 +93,8 @@ function generatePoster() {
         };
         reader.readAsDataURL(file);
     };
+
+    document.getElementById('shareTextContainer').style.display = 'block';
 }
 
 async function sharePoster() {
